@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  color: #fff;
+  font-size: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #090b1a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+body .attribution {
+  width: 100%;
+  padding-bottom: 0.25rem;
+}
+body .card {
+  width: 85%;
+  background-color: #1b1938;
+  margin: 0.5rem 0;
+  border-radius: 15px;
+}
+body .card .text-side {
+  padding: 1rem;
+  text-align: center;
+}
+body .card .text-side div {
+  padding-bottom: 0.5rem;
+}
+body .card .text-side #paragraph,
+body .card .text-side .stat p {
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5;
+}
+body .card .text-side #paragraph {
+  margin: 0.3rem 0;
+}
+body .card .text-side #accent {
+  color: #aa5cdb;
+}
+body .card .text-side .stat p {
+  text-transform: uppercase;
+}
+body .card .image-side {
+  height: 200px;
+  background: url("images/image-header-mobile.jpg") no-repeat center center/cover;
+  position: relative;
+  border-radius: 15px 15px 0 0;
+}
+body .card .image-side::after {
+  border-radius: inherit;
+  content: "";
+  opacity: 0.4;
+  background-color: #aa5cdb;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+body .card .image-side > * {
+  z-index: 10;
+}
+
+/*# sourceMappingURL=styles.css.map */
