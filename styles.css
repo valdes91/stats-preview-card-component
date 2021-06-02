@@ -50,6 +50,7 @@ body .card .text-side #accent {
 }
 body .card .text-side .stat p {
   text-transform: uppercase;
+  font-size: 0.8rem;
 }
 body .card .image-side {
   height: 200px;
@@ -71,6 +72,37 @@ body .card .image-side::after {
 }
 body .card .image-side > * {
   z-index: 10;
+}
+
+@media screen and (min-width: 768px) {
+  body .card {
+    display: flex;
+    flex-direction: row;
+    height: 55%;
+    overflow: scroll;
+  }
+  body .card .image-side {
+    order: 1;
+    width: 50%;
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+  }
+  body .card .text-side {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2.5rem 0;
+    text-align: left;
+  }
+  body .card .text-side div {
+    width: 70%;
+  }
+  body .card .text-side #stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
